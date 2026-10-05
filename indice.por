@@ -1,12 +1,23 @@
 programa {
   inclua biblioteca Graficos --> graficos
   inclua biblioteca Util --> util
+  const inteiro LARGURA = 800
+  const inteiro ALTURA = 500
     funcao inicio() {
       // funções da biblioteca de gráficos para montar a tela do jogo
         escreva("Olá Mundo!")
         graficos.iniciar_modo_grafico(verdadeiro)
         graficos.definir_dimensoes_janela(800, 500)
         graficos.definir_titulo_janela("batalha pokemon rpg")
+        /**
+         * Tipos de variaveis:
+         * cadeia = tipo de dado para escrever textos, exemplo: "batalha pokemon"
+         * caracter - tipo de dado para escrever apenas um caracter exemplo: m
+         * logico - tipo de dado pra informar se o valor é verdadeiro ou falso, exemplo: cadastrado = falso
+         * inteiro - tipo de dado para informar numeros inteiros sem casas decimais, exemplo: idade = 16
+         * real - tipo de dado para informar numeros com casas decimais, por exemplo: r$ = 35,99
+         * vazio - tipo de dadospara processar funções sem terceiro de valor, exemplo: função escreva
+         */
         // definição do céu do jogo
         graficos.definir_cor(graficos.criar_cor(150, 216, 250))
         graficos.desenhar_retangulo(0, 0, 800, 240, falso, verdadeiro)
